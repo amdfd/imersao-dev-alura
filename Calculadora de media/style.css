@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background-color: #F2F2F2;
+}
+
+.cabecalho {
+  background-color: #694966;
+}
+
+.cabecalho h1 {
+  color: #fff;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+.cabecalho p {
+  color: #fff;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.page-logo {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+.alura-logo {
+	width: 40px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.input-notas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+  padding-top: 60px;
+  font-size: 36px;
+}
+
+.resultado {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.ilust {
+  height: 360px;
+  width: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rodape {
+  position: absolute;
+  bottom: 0;
+  background-color: #694966;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.rodape p {
+  color: #fff;
+}
+
+.autora {
+  color: #FEE2FB;
+}

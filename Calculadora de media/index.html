@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Média</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="cabecalho">
+    <h1>Calculadora de Média</h1>
+    <p class="subtitulo">Descubra sua média de notas do ano.</p>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+  </div>
+
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+
+  <div class="input-notas">
+    <input type="number" name="primeiraNota" id="primeiraNota"> +
+    <input type="number" name="segundaNota" id="segundaNota"> +
+    <input type="number" name="terceiraNota" id="terceiraNota"> +
+    <input type="number" name="quartaNota" id="quartaNota">
+    <input type="button" value="Calcular" onclick="calcular()">
+  </div>
+
+  <div class="resultado" id="res">RESULTADO</div>
+
+  <script>
+    function calcular() {
+      var primeiraNota = window.document.getElementById('primeiraNota')
+      var segundaNota = window.document.getElementById('segundaNota')
+      var terceiraNota = window.document.getElementById('terceiraNota')
+      var quartaNota = window.document.getElementById('quartaNota')
+      var res = window.document.getElementById('res')
+
+      var notaUm = Number(primeiraNota.value)
+      var notaDois = Number(segundaNota.value)
+      var notaTres = Number(terceiraNota.value)
+      var notaQuatro = Number(quartaNota.value)
+
+      var notaFinal = (notaUm + notaDois + notaTres + notaQuatro) / 4
+      var notaFinal = notaFinal.toFixed(1)
+
+      res.innerHTML = `<p>Sua nota média é <strong>${notaFinal}</strong>.</p>`
+      if (notaFinal >= 7) {
+        res.innerHTML += `<p>Parabéns! Sua média está ótima!</p>`
+      } else {
+        res.innerHTML += `<p>Não desista! Continue se dedicando aos estudos.</p>`
+      }
+    }
+  </script>
+
+  <div class="ilustracao">
+    <img src="./img/fine vector.svg" alt="" class="ilust">
+  </div>
+
+  <div class="rodape">
+    <p>Calculadora desenvolvida por <span class="autora">Amanda Falcão</span> na Imersão Dev da Alura em 2022.</p>
+  </div>
+</body>
+
+</html>

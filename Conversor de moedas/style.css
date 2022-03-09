@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 400px;
+  background-color: #ffe4e0;
+  background-size: 100vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./IMG/andre-taissin-5OUMf1Mr5pU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 10vh;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+label {
+  color: #3d3d3d;
+  font-size: 24px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+h2 {
+  color: #3d3d3d;
+  font-size: 30px;
+}
+
+.rodape {
+  background-color: #fff;
+  margin: 0px;
+  height: 130px;
+}
+
+.rodape p {
+  font-size: 24px;
+  color: #3d3d3d;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.rodape span {
+  color: #fb6e5c;
+}
